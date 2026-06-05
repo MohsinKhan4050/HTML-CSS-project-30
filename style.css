@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #ddd;
+}
+
+
+.container {
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    padding: 10px;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    transition: transform 0.4s ease;
+
+}
+
+.container .logo {
+    width: 80px;
+    border-radius: 50%;
+}
+
+.container .logo img {
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.container .details p {
+    font-size: 15px;
+}
+
+.container .details .subscribe-btn {
+    display: inline-block;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px 0;
+    border-radius: 10px;
+    border: none;
+    background: rgb(0, 251, 255);
+    color: #333;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.container #toggle {
+    position: absolute;
+    right: 7px;
+    top: 7px;
+    cursor: pointer;
+}

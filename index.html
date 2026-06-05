@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working Subscribe Button using only HTML CSS and JavaScript | Web Push Toast Notification</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <aside class="container">
+
+        <i class="fa-solid fa-xmark" id="toggle"></i>
+
+
+        <div class="logo">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLforqfQmNFMOP6yUmPaMfIuAQ5wl3oY2lxw&s"
+                alt="">
+        </div>
+
+        <div class="details">
+            <h4>Mohsin Khan</h4>
+            <p>Subscribe Our Youtube Channel</p>
+            <button class="subscribe-btn">Subscribe</button>
+        </div>
+
+    </aside>
+
+    <script>
+        const toggle = document.getElementById("toggle");
+        const container = document.querySelector(".container");
+
+        toggle.addEventListener("click", () => {
+            container.style.transform = "translateX(120%)";
+        });
+    </script>
+</body>
+
+</html>
